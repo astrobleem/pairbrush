@@ -10,14 +10,8 @@ Historical DOSBox-X renderer capture from the production-source test fixture wit
 
 ## Build and run
 
-This source repository preserves the final R2 source from 2026-10-13 without changing the app. Build using Microsoft C 6.0 and DOS LINK; see [build instructions](docs/BUILD.md). Compiler tools and compiled executables are not bundled.
+Build using Microsoft C 6.0 and DOS LINK; see [build instructions](docs/BUILD.md).
 
 Run the built `PAINT.EXE` in plain Tandy DOS 3+, starting in mode 3, with 640 KB installed (624 KB reported by BIOS). Exit Windows first. A DOS mouse driver is optional; `PAINT /NOMOUSE` uses keyboard controls. This revision uses Tandy mode 9 and has no ordinary IBM CGA backend.
 
-See [controls and file format](docs/USER-GUIDE.md). Host checks are available through `scripts/test-host.ps1`; run `python scripts/verify-source.py` to check the source against the recorded R2 hashes.
-
-## License
-
-Chad selected [MIT](LICENSE) for Pairbrush's original code.
-
-The local preparation passed 1,532,777 document assertions, 27 allocation checks and 54,733 UI assertions. The original R2 records a successful MSC6/DOSBox-X target build; a new target build has not been run during repository preparation. Real hardware speed and TV color appearance remain to be assessed on the target setup.
+See [controls and file format](docs/USER-GUIDE.md).
