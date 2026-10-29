@@ -16,8 +16,8 @@ Run the built `PAINT.EXE` in plain Tandy DOS 3+, starting in mode 3, with 640 KB
 
 See [controls and file format](docs/USER-GUIDE.md). Host checks are available through `scripts/test-host.ps1`; run `python scripts/verify-source.py` to check the source against the recorded R2 hashes.
 
-## License and credits
+## License
 
-Chad selected [MIT](LICENSE) for Pairbrush's original code. [Credits](docs/CREDITS.md) record the development tools and historical material. The existing R2 source has been retained, including its small 5x7 glyph table.
+Chad selected [MIT](LICENSE) for Pairbrush's original code.
 
 The local preparation passed 1,532,777 document assertions, 27 allocation checks and 54,733 UI assertions. The original R2 records a successful MSC6/DOSBox-X target build; a new target build has not been run during repository preparation. Real hardware speed and TV color appearance remain to be assessed on the target setup.
